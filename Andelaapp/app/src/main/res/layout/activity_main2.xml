@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    tools:context=".Main2Activity"
+    tools:menu="@tools:sample/date/ddmmyy">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:backgroundTint="#00BCD4"
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/about_alc_head_view"
+        android:layout_width="wrap_content"
+        android:layout_height="118dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:capitalize="words"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/about_alc_topic_view"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/about_alc_head_view"
+        app:layout_constraintStart_toStartOf="@+id/about_alc_head_view"
+        app:layout_constraintTop_toBottomOf="@+id/about_alc_head_view" />
+
+    <TextView
+        android:id="@+id/about_alc_bod_view"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/about_alc_topic_view"
+        app:layout_constraintStart_toStartOf="@+id/about_alc_topic_view"
+        app:layout_constraintTop_toBottomOf="@+id/about_alc_topic_view" />
+
+    <TextView
+        android:id="@+id/about_alc_end_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/about_alc_bod_view"
+        app:layout_constraintStart_toStartOf="@+id/about_alc_bod_view"
+        app:layout_constraintTop_toBottomOf="@+id/about_alc_bod_view" />
+</android.support.constraint.ConstraintLayout>
